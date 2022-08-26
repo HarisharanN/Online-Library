@@ -1,0 +1,84 @@
+<html>
+<head language="javascript">
+<style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url("bookswall.jpg");  
+    font-family: 'Arial';  
+}  
+.tts{
+font-family: 'fantasy';
+font-size:60px;
+color:white;
+}
+.txts{
+font-family: 'Arial';
+font-size:20px;
+color:white;
+}
+.login{  
+        width: 600px;  
+        overflow: hidden;  
+        margin: auto;  
+        padding: 80px;  
+        background: #230000;  
+        border-radius: 15px ;  
+ }  
+h2{  
+    text-align: center;  
+    color: #909033;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+.Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+ }   
+</style>
+<body>
+<center>
+<div class="login">
+<h2 class="tts">
+LOGIN</h2>
+<form id="login"  action="Loginp.php" method="POST">
+<p class="txts">Enter Email ID:</p><input type="text" id="Uname" placeholder="Email ID" name="useremail">
+<br><br>
+<p class="txts">Enter Password:</p><input type="password" placeholder="Password" id="myInput" class="Pass" name="userpassword">
+<p class="txts"><input type="checkbox" onclick="myFunction()">Show Password</p><br><br>
+<input type="submit" id="log"  value="LOG IN"><br>
+</form>
+</body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</html>
